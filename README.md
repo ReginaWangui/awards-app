@@ -1,72 +1,107 @@
-# Awwwards
 
-By: Musyoki Mutua
+## API Endpoints (url / uri)
+    - CRUD : Create, Retrieve, Update, Delete 
+    - Create List and Search
 
-## Description
-This web-app allows a user to create a Profile,Category,Country,Technology,Color and Projects that are all under his username allowing other users to vote for them and visit the particular projects site.
+## HTTP methods (client side)
+    - GET, POST, PUT, MATCH, DELETE    
+    
+## Data Types and Validation
+    Use a serializer for consistency 
+    JSON -> Serializer
+    Validation -> Serializer
+    
+    
+    
+## Purpose
+    The purpose of this Independent Project is to demonstrate your level of understanding of the various concepts that you have covered in the content throughout the week. The project will be graded by your peers and will determine if you are eligible to move on to the next module. All the requirements provided below should be met in a high quality manner.
 
-### Known Bugs
-* Elements re-arrange themselves unequally on different screen sizes.
-* Cards disarrange themselves when they're not four in a row.
-* Submit button moves to the side when a user with a long username logs in.
 
-### Behaviour Driven Development
-* The program should return all projects on the directories page<br>
-Given:All projects<br>
-When: Url is changed to directory page<br>
-Then: All projects are displayed<br>
+# References
+    If you get stuck during the development of your project you can contact me on Github
 
-* Admin site should be displayed when "admin/" url is chosen<br>
-Given: An admin url<br>
-When: User enters admin url in browser<br>
-Then: Admin Login is displayed<br>
 
-* User authentication occurs when Admin tries to Login<br>
-Given:Admin page is accessed<br>
-When: User tries to login<br>
-Then: User details are authenticated to confirm if user is an admin<br>
+# Project prompt
+    At Moringa school you create a lot of projects (IPs, Mid-week projects) but you never know how those projects rate with your peers. Your objective is to create an application like Awwards (Links to an external site.)Links to an external site. (It doesn't necessarily have to be exactly the same). The application will allow a user to post a project he/she has created and get it reviewed by his/her peers.
 
-* User session should end when logout url is chosen<br>
-Given:Logout option is given<br>
-When: User chooses logout option<br>
-Then: User session is ended<br>
-## Description
-A web application where developers can be a able to post their projects and other developers can be able to vote and gauge their views on the application.
-## Technologies
-The project is created with:
-* HTML:5 for giving the structure of the webpage.
-* CSS:3 for styling the webpage.
-* Bootstrap for more styling of the webpage.
-* Python Django for the functionality.
+A project can be rated based on 3 different criteria
 
-## Installation
-* Clone the repository directly to your pc using this command
-    https://github.com/msyoki/Awards-app.git
-* To be able to run this project on your PC you need to have python already installed Python version 3.6 and above. Incase you dont have it use this commands to install
-    $ sudo add-apt-repository ppa:jonathonf/python-3.6
-    $ sudo apt-get update
-    $ sudo apt-get install python3.6
-* Install Python command tool called PIP which comes preinstalled in linux and mac. For linux use this to install pip
-    $ sudo apt-get install python3-pip 
-* For mac 0S use this command to install pip
-    sudo easy_install pip
-Open your editor and run the cloned repository and install the modules below to run effectivey.
+    Design
+    Usability
+    Content
+    These criteria can be reviewed on a scale of 1-10 and the average score is taken.
 
-* To install all requirements and extentions needed to run the app install requirements using
+# User stories
+As a user, you can:
 
-    pip install -r requirements.txt
-* To run the class test use the following commands in the terminal
-    python3.6 manage.py test
-* Now your ready to run the modules type the fillowing commands to run the app locally.
-    ./start.sh or python3.6 manage.py server
-	
-## Setup
-To run this project, use the live link in the GitHub repo:
-The live link to the project is als provided below.
-https://awwardsmsyoki.herokuapp.com/
+    View posted projects and their details.
+    Post a project to be rated/reviewed
+    Rate/ review other users' projects
+    Search for projects 
+    View projects overall score
+    View my profile page.
+
+## System Features/Objectives
+     Projects
+Projects should have a Title, an image of the project's landing page, a detailed description of the project, a link to the live site.
+
+     Profile
+Your project should have a user profile that at least the following information:
+
+    Profile picture of the user.
+    User Bio
+    Projects the user has posted
+    A contact information of the user. 
+ An Authentication System 
+    Your application should have a solid authentication system that allows users to sign up or log in to the application before posting or rating a project.
+
+     Rating/ Review
+Projects will be rated/reviewed based on the following criteria:
+
+ 
+##  API Endpoints
+    You should create an API so that users can access data from your application. You can create two API endpoints:
+
+Profile - This endpoint should return all the user profiles with information such as the username, bio, projects of the user and profile picture
+Projects- This endpoint should return information pertaining to all the projects posted in your application.
+
+
+# Getting Started.
+
+    These instructions will get you a copy of the project up and running on a local host.
+
+    Step 1: git clone
+    Step 2: Enter the Project root folder
+
+    install virtual environment (venv) without pip
+
+    python3.6 -m venv --without-pip virtual
+    Step 3: Activate virtual environment
+
+    source virtual/bin/activate
+    install pip using curl
+
+
+## Deployment
+
+    Deploying the Django Apps to Heroku to view.
+
+## Built With
+
+    Python3.8 - Python is a programming language that lets you work quickly and integrate systems more effectively
+    Django - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design
+    postgresql - PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
+    Versioning
+    version 1.0.0
 
 ## Bugs
-Minor implimentation on rating funtionality pending
 
-### License
-Copyright (c)2020 **Awwwards by Musyoki Mutua**
+    If you encounter any bugs, email me on reginahwangui801@gmail.com. If you would like to add some changes, please feel free to
+fork the project and make a pull request.
+
+## Authors
+
+ReginaWabgui
+
+
+
